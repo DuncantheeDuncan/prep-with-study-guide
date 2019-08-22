@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Multiple",
+            "request": "launch",
+            "mainClass": "java8.topic1.Multiple"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AboutVariableSope",
+            "request": "launch",
+            "mainClass": "AboutVariableSope"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AboutAbstructs",
+            "request": "launch",
+            "mainClass": "AboutAbstructs"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AboutINterface",
+            "request": "launch",
+            "mainClass": "AboutINterface"
+        }
+    ]
+}
