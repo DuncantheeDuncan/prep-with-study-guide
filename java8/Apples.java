@@ -6,6 +6,6 @@ public static void main(String[] args) {
 	Apples aps = new Apples();
 	aps.takeName();
 	
-}
+	}
 
 }
