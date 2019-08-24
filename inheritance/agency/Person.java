@@ -53,11 +53,7 @@ void getpersonalDetails(){
 		System.out.println(clener.makepersonalDetails());
 		clener.shiftDuration();
 
-
-
-	
-
-		
+		 
 	}
 
 
@@ -77,16 +73,34 @@ void getpersonalDetails(){
 		Cleaner(){
 			this("no","no",0,2.0);
 		}
-void shiftDuration(){
 
-	System.out.print("My shift is "+shiftDur+" hours ");
-	System.out.println("My Basic salary is R"+salary+"");
+		void shiftDuration(){
+		System.out.print("My shift is "+shiftDur+" hours ");
+		System.out.println("My Basic salary is R"+salary+"");
 }
 
 	}
+
+//  !! -----------------------------------------
+
+	// class Grandfather{
+
+
+	// 	Cleaner  familyName(String famlyName){
+
+	// 		return famlyName
+	// 	}
+
+		
+	// } 
 	
+	// class Father extends Grandfather{ 
 
 
+
+	// }
+
+// !! ----------------------------------- 
 
 
 
