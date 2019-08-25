@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "agency.Person"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Multiple",
             "request": "launch",
             "mainClass": "java8.topic1.Multiple"

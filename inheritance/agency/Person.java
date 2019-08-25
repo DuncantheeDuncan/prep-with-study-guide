@@ -1,7 +1,8 @@
-package agency;
-class Person{
- public String fname;
- String lname;
+// package agency;
+// import agency.*;
+ class Person{
+ private String fname;
+ private String lname;
  private int dob;
  
 Person(String fname,String lname){
@@ -13,7 +14,7 @@ this.lname = lname;
 }
 // if there are no params passed in..
 Person(){
-	this("Unknown", "Unknown");
+	this("Unknown(Name)", "Unknown(surname)");
 }
 
 void setDOB(int dob){
@@ -23,7 +24,9 @@ System.out.println("I was born in this year " + mydb);
 
 
 
-public String makepersonalDetails(){ return  "the name "+fname+" the surname "+ lname; }
+public String makepersonalDetails(){ return  "Start with name "+fname+" then with surname "+ lname; }
+
+
 
 void getpersonalDetails(){
 
@@ -37,21 +40,35 @@ void getpersonalDetails(){
 
 	public static void main(String[] args) {
 
-		// Person person1 = new Cleaner("phumlani","Mthembu");
+		
 		Person person1 = new Person("phumlani","Mthembu");
-		// Person person1 = new Person();
+		// String iiii = null;
+		// Person person2 = new Person("Jack",iiii);
 
 		person1.setDOB(2000);
 		person1.getpersonalDetails();
 		System.out.println(person1.makepersonalDetails());
+		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
 		// person1.getCleaner();
 		// Cleaner clener = new Person();
-		Cleaner clener = new Cleaner("phumlani","Mthembu",8,12000);
 
+		// Person clener = new Cleaner("'Phumlani thee-cleaner 1'","Mthembu");
+		Clearner clener = new Clearner("'Phumlani thee-cleaner 2'","Mthembu",8,12000);	
 		clener.setDOB(3000);
 		clener.getpersonalDetails();
 		System.out.println(clener.makepersonalDetails());
 		clener.shiftDuration();
+		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
+		
+		
+
+
+		// person2.setDOB(10);
+		// person2.getpersonalDetails();
+		// person2.setDOB(1990);
+		// System.out.println(person2.makepersonalDetails());
+		
+
 
 		 
 	}
@@ -59,28 +76,7 @@ void getpersonalDetails(){
 
 	}
 
-	class Cleaner extends Person{
-
-		private int shiftDur;
-		private double salary;
-
-		Cleaner(String fname, String lname,int shiftDur, double salary){
-			super(fname , lname);
-			// this.dob = dob;
-			this.shiftDur = shiftDur;
-			this.salary = salary;
-		}
-		Cleaner(){
-			this("no","no",0,2.0);
-		}
-
-		void shiftDuration(){
-		System.out.print("My shift is "+shiftDur+" hours ");
-		System.out.println("My Basic salary is R"+salary+"");
-}
-
-	}
-
+	
 //  !! -----------------------------------------
 
 	// class Grandfather{
