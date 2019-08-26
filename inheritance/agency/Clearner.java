@@ -1,7 +1,7 @@
 // package agency;
 // import agency.Person;
 
- class Clearner extends Person{
+  class Clearner extends Person{
        
 
     private int shiftDur;
@@ -22,7 +22,7 @@
     Clearner(){
         this("no","no",0,2.0);
     }
-Clearner getone(){
+Clearner getOne(){
 
     return this;
 
@@ -35,5 +35,27 @@ Clearner getone(){
 public String makepersonalDetails(){// overriding
     
     return "start with surname => "+ lname+" then follow with surname "+ fname;}
+
+}
+
+class TakeAlook{
+
+    String  ABC(){
+        // System.out.println("phum");
+        return "Phum";
+    }
+  
+
+}
+
+class TakeAlookAtMe extends TakeAlook{
+ String ABC(){
+    //  System.out.println("lani");
+    return "lani";
+ }
+
+}
+
+class Last extends TakeAlookAtMe{
 
 }

@@ -1,11 +1,11 @@
 // package agency;
 // import agency.*;
- class Person{
+  class Person{
  private String fname;
  private String lname;
  private int dob;
  
-Person(String fname,String lname){
+ Person(String fname,String lname){
 
 this.fname = fname;
 this.lname = lname;
@@ -17,7 +17,7 @@ Person(){
 	this("Unknown(Name)", "Unknown(surname)");
 }
 
-void setDOB(int dob){
+  void setDOB(int dob){
 int mydb = this.dob = dob;
 System.out.println("I was born in this year " + mydb);
 }
@@ -59,6 +59,16 @@ void getpersonalDetails(){
 		System.out.println(clener.makepersonalDetails());
 		clener.shiftDuration();
 		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
+		Last take = new Last();
+		System.out.println(take.ABC());
+		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
+
+		System.out.println(clener.getOne());
+		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
+
+		CallToMeeting call = new CallToMeeting(person1.fname,person1.lname);
+		call.mettingTime(person1);
+		
 		
 		
 
@@ -74,42 +84,7 @@ void getpersonalDetails(){
 	}
 
 
-	}
-
-	
-//  !! -----------------------------------------
-
-	// class Grandfather{
-
-
-	// 	Cleaner  familyName(String famlyName){
-
-	// 		return famlyName
-	// 	}
-
-		
-	// } 
-	
-	// class Father extends Grandfather{ 
-
-
-
-	// }
-
-// !! ----------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
