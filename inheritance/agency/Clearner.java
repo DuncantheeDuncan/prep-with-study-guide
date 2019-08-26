@@ -1,7 +1,7 @@
 // package agency;
 // import agency.Person;
 
-  class Clearner extends Person{
+  class Clearner extends Person implements uniform{
        
 
     private int shiftDur;
@@ -27,6 +27,18 @@ Clearner getOne(){
     return this;
 
 }
+// TODO: is_the_uniform_on  false
+public String two(){
+            System.out.println("interface default");
+            return null;
+        }
+
+public void putonUniform(){
+
+
+System.out.println("the uniform is on, you can work now.");
+
+}
     void shiftDuration(){
     System.out.print("My shift is "+shiftDur+" hours ");
     System.out.println("My Basic salary is R"+salary+"");
@@ -38,7 +50,7 @@ public String makepersonalDetails(){// overriding
 
 }
 
-class TakeAlook{
+ class TakeAlook{
 
     String  ABC(){
         // System.out.println("phum");
@@ -59,3 +71,8 @@ class TakeAlookAtMe extends TakeAlook{
 class Last extends TakeAlookAtMe{
 
 }
+
+// private interface one {
+
+
+// }
