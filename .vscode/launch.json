@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Person",
             "request": "launch",
+            "mainClass": "Person",
+            "projectName": "prep-with-study-guide_ebe79796"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
             "mainClass": "agency.Person"
         },
         {
