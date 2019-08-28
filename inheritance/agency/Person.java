@@ -1,6 +1,7 @@
 // package agency;
 // import agency.*;
 import java.time.LocalDate;
+import java.time.Period;
   class Person{
  private String fname;
  private String lname;
@@ -74,14 +75,33 @@ void getpersonalDetails(){
 		clener1.putonUniform();
 		uniform.startTime("17-march-2017");
 		System.out.println(clener1.two());
+		clener1.me();
 		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
 		Last take = new Last();
 		System.out.println(take.ABC());
 		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
 
 		System.out.println(clener1.getOne());
+		uniform.mestatic();
 		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
 
+		System.out.println("DATES....");
+
+		LocalDate date =  LocalDate.now();
+		// System.out.println(LocalDate.now().of(2000, 03, 20));
+		System.out.println("todays date "+date);
+		System.out.print(date.getDayOfWeek());
+		System.out.print(" "+date.getDayOfMonth());
+		System.out.print(" "+date.getDayOfYear());
+		System.out.print(" "+date.getMonthValue());
+		System.out.print(" "+date.getYear());
+		System.out.println("* * * * * * * * * * * * * * * * * * ** **");
+		
+		uniform notcalled = new Clearner();
+		notcalled.imnotcalled();
+		
+
+		// Period.parse("PIY5");
 		
 		
 		

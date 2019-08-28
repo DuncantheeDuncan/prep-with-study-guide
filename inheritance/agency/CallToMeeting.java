@@ -17,10 +17,12 @@ private String fname;
 
         // for(Person[] d:p){
             System.out.println("Mr "+ this.fname+" "+ lname+" this is to serve as a reminder to a meting"+
-            " on "+ LocalDate.now());
+            " on "+ LocalDate.now().plusDays(20));
     
         // }
        
     }
+
+   
 
 }

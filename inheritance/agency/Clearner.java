@@ -1,7 +1,7 @@
 // package agency;
 // import agency.Person;
 
-  class Clearner extends Person implements uniform{
+  class Clearner extends Person implements uniform,meee{
        
 
     private int shiftDur;
@@ -27,6 +27,9 @@ Clearner getOne(){
     return this;
 
 }
+public void me(){
+    System.out.println("me1 overriden");
+}
 // TODO: is_the_uniform_on  false
 public String two(){
             System.out.println("interface default");
@@ -47,6 +50,11 @@ System.out.println("the uniform is on, you can work now.");
 public String makepersonalDetails(){// overriding
     
     return "start with surname => "+ lname+" then follow with surname "+ fname;}
+    // return super.makepersonalDetails();}// calling the super
+    // String g = "qwertyuiop[";
+    // this.makepersonalDetails()
+    // g = this.makepersonalDetails();
+    // return g;}
 
 }
 
