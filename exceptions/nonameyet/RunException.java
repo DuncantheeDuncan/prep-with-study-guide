@@ -11,6 +11,9 @@ class OfExceptions{
 // }
 
 
+
+
+
 void takesNumber()throws ArrayIndexOutOfBoundsException{
     String[] arr = new String[20];
 
@@ -36,8 +39,38 @@ void takesNumber()throws ArrayIndexOutOfBoundsException{
 
 }
 
+int[] addDoors = {1,2,3,4,5,6,7};
+void Doors(){
+
+    System.out.println(("Starting..."));
+    if(addDoors.length>1){
+
+        if(addDoors.length >5){
+            try{
+                System.out.println("I am greter than 5");
+                System.out.println(addDoors[7]);
+            }catch (ArrayIndexOutOfBoundsException e){
+                System.out.println("array index out of bound!!\n" +e);
+            }finally{
+                addDoors = new int[6];
+
+                // addDoors[]
+            }
+        }
+    }else{
+        System.out.println("The length is " +addDoors.length);
+
+    }
+
+    
+}
+
+
 
 }
+
+
+
 class RunException{
 
 
@@ -50,6 +83,8 @@ class RunException{
  OfExceptions of = new OfExceptions();
 
  of.takesNumber();
+ System.out.println("* * ** * * * * * * * * * * * * * * *");
+ of.Doors();
 
 
 
