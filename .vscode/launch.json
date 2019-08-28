@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - staticInheritance",
+            "request": "launch",
+            "mainClass": "staticInheritance"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Person",
             "request": "launch",
             "mainClass": "agency.Person"
