@@ -16,7 +16,8 @@ public class staticInheritance extends Writer {
         Writer n= new staticInheritance();
         
         n.writer();
-       
+
+
         
     }
 }
